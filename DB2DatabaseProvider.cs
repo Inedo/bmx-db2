@@ -11,7 +11,7 @@ namespace Inedo.BuildMasterExtensions.DB2
     /// <summary>
     /// IBM DB2 database provider.
     /// </summary>
-    [ProviderProperties("DB2", "Supports DB2 9.7 and later.")]
+    [ProviderProperties("DB2", "Supports DB2 9.7 and later.", RequiresTransparentProxy = true)]
     [CustomEditor(typeof(DB2DatabaseProviderEditor))]
     public sealed class DB2DatabaseProvider : DatabaseProviderBase, IChangeScriptProvider
     {
